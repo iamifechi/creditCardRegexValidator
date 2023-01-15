@@ -30,18 +30,3 @@ function validateCard(cardNum, cardType) {
 
   return isValid !== null;
 }
-
-//Test case 1 outputs true
-console.log(validateCard('4155279860457', 'Visa'))
-
-//Test case 2 outputs false
-console.log(validateCard('4155 2798 604579', 'Visa'))
-
-//Test case 3 outputs true
-console.log(validateCard('5155 2798 6045 7678', 'Mastercard'))
-
-//Test case 4 outputs true
-console.log(validateCard('2255 2798 6045 7678', 'Mastercard'))
-
-//Test case 5 outputs false
-console.log(validateCard('2155 2798 6045 7678', 'Mastercard'))
